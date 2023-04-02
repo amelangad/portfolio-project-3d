@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/Header.css'
 import { Canvas} from "@react-three/fiber";
-import Cylinder3d from ".//Cylinder3d";
+import Diamond from "./Diamond";
 import Nav from './Nav'
 import Overlay from './Overlay'
-import {OrbitControls, Stage, Environment, ScrollControls} from '@react-three/drei'
+import {OrbitControls, Environment, Center, ScrollControls} from '@react-three/drei'
 import Desc from './Desc'
 
 export default function Header() {
@@ -15,15 +15,11 @@ return (
         resize= {{ scroll: false}}>
         <pointLight position={[10, 25, 0]} />
          <ambientLight intensity={.1}/>
-         <OrbitControls enableZoom={false}/>
          <ScrollControls pages ={3} damping ={0.25}>
-       
-          <Cylinder3d/>
-  
+          <Diamond/>
           <Desc/>
         </ScrollControls>
         </Canvas>
-        <Nav/>
         <Overlay/>
       </section>
   );

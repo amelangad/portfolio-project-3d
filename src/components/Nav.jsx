@@ -14,13 +14,13 @@ export default function Nav() {
    onLoad = {() => setShow(true)}>
     <ul className ="nav__menu">
         <li className = "nav__menu--link">
-            <i className ="menu__icon"><HiUser/></i> <a className ={`menu__text ${open? 'open' : 'close'}`} >About me</a>
+            <i className ="menu__icon"><HiUser/></i> <h1 className ={`menu__text ${open? 'open' : 'close'}`}>About me</h1>
             </li>
             <li className = "nav__menu--link">
-            <i className ="menu__icon"><HiMail/></i> <a className ={`menu__text ${open? 'open' : 'close'}`} >Contact me</a>
+            <i className ="menu__icon"><HiMail/></i> <h1 className ={`menu__text ${open? 'open' : 'close'}`}>About me</h1>
             </li>
             <li className = "nav__menu--link">
-            <i className ="menu__icon"><HiMail/></i> <a className ={`menu__text ${open? 'open' : 'close'}`} >Contact me</a>
+            <i className ="menu__icon"><HiMail/></i> <h1 className ={`menu__text ${open? 'open' : 'close'}`}>About me</h1>
             </li>
     </ul>
    </nav>

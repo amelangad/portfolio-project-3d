@@ -2,5 +2,7 @@
   width: 100vw;
   margin:0;
   padding: 0;
-  font-family: 'Lobster Two', cursive;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  overflow: hidden;
+  background-color: black;
 }

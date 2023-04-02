@@ -1,16 +1,16 @@
 .overlay {
     position: absolute;
-    top:0;
+    top: 0;
     width: 100vw;
-    height:100vh;
-    background-color: white; 
+    height: 100vh;
+    background-color: rgba(3, 3, 3, 0.212);
     transform: translateY(-1000px);
     animation: SlideIn 4s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index:5;
+    z-index: 5;
 }
 
 .active {
@@ -23,21 +23,48 @@
 
 
 @keyframes SlideIn {
-30% {transform: translateY(-400px)}
-50% {transform: translateY(0)}
-90% {transform: translateY(0)}
+    30% {
+        transform: translateY(-400px)
+    }
+
+    50% {
+        transform: translateY(0)
+    }
+
+    90% {
+        transform: translateY(0)
+    }
 }
 
-.header__title{
-font-size: 4rem;
-font-family: 'Lobster Two', cursive;
-color: rgb(226, 18, 181);
-padding: 0;
-margin:0;
+.overlay__content {
+    background-color: black;
+    width: 100%;
+    text-align: center;
 }
-
-.header__desc {
-    font-size: 2rem;
-    color: black;
+.overlay__title {
+    font-size: 2.5rem;
     font-family: 'Lobster Two', cursive;
+    color: rgb(211, 20, 36);
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 1px 1px orange;
+}
+
+.overlay__desc {
+    font-size: 1.5rem;
+    color: rgb(236, 152, 26);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 1px 1px red;
+}
+
+
+@media (min-width: 750px) {
+    .overlay__title {
+        font-size: 4rem;
+    }
+
+    .overlay__desc {
+        font-size: 2rem;
+    }
+
 }
