@@ -6,14 +6,13 @@ import { useScroll, AccumulativeShadows, Environment } from '@react-three/drei'
 export const FLOOR_HEIGHT = 1;
 export const NB_FLOORS = 3;
 
-
 function Diamond(props) {
   const ref = useRef();
   const tl = useRef();
-  const [color, setColor] = useState(false);
+  const [color, setColor] = useState([2, 1, 1]);
   const scroll = useScroll()
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (ref.current.rotation.y += 0.008));
+  useFrame(() => (ref.current.rotation.y += 0.008));
   useFrame(() => { tl.current.seek(scroll.offset * tl.current.duration()) })
 
   useLayoutEffect(() => {
@@ -31,12 +30,10 @@ function Diamond(props) {
     {...props}
     ref={ref}
     position={[2, 1, 1]}
-   scale ={.8}
-    onPointerOver={(event) => setColor(true)}
-    onPointerOut={(event) =>setColor(false)}>
+   scale ={.8}>
     <icosahedronGeometry args={[1,0]}/>
     <meshStandardMaterial
-    color="red"/>
+    color ={'red'}/>
   </mesh>
   );
 }
