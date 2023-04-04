@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 import gsap from 'gsap';
-import { useScroll, AccumulativeShadows, Environment } from '@react-three/drei'
+import { useScroll } from '@react-three/drei'
 
 export const FLOOR_HEIGHT = 1;
 export const NB_FLOORS = 3;
@@ -33,7 +33,7 @@ function Diamond(props) {
    scale ={.8}>
     <icosahedronGeometry args={[1,0]}/>
     <meshStandardMaterial
-    color ={'red'}/>
+    color ={"red"}/>
   </mesh>
   );
 }

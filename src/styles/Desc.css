@@ -8,7 +8,8 @@
     padding: 10px;
     position: relative;
 }
-.desc__wrapper{
+
+.desc__wrapper {
     perspective: 800px;
     width: 100vw;
     height: 100%;
@@ -37,14 +38,15 @@
     font-family: 'Lobster Two', cursive;
     font-size: 2rem;
     color: red;
-    z-index:2;
+    z-index: 2;
     text-shadow: 1px 1px 1px black;
     letter-spacing: 1px;
 }
+
 .desc__text {
-  padding: 0rem 2rem 1rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
     border-radius: 20px;
-    z-index:2;
+    z-index: 2;
     font-size: 1.3rem;
 
 }
@@ -58,26 +60,29 @@
     top: -8em;
     right: -10rem;
     background-color: rgb(245, 172, 36);
-    z-index:1;
+    z-index: 1;
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .desc__box {
         width: 50%;
-}}
+    }
+}
 
-@media (min-width: 1550px){
-    .desc__section{
+@media (min-width: 1550px) {
+    .desc__section {
         width: 50vw;
     }
-    .desc__wrapper{
+
+    .desc__wrapper {
         width: 100vw;
         margin: 2rem;
     }
+
     .desc__box {
         width: 50%;
         margin-left: 20%;
-}
+    }
 
 }

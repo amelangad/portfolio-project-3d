@@ -3,7 +3,7 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(3, 3, 3, 0.212);
+    background-color: rgb(19, 18, 18);
     transform: translateY(-1000px);
     animation: SlideIn 4s ease-in-out;
     display: flex;
@@ -37,7 +37,6 @@
 }
 
 .overlay__content {
-    background-color: black;
     width: 100%;
     text-align: center;
 }
