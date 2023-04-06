@@ -37,7 +37,7 @@
 .desc__title {
     font-family: 'Lobster Two', cursive;
     font-size: 2rem;
-    color: red;
+    color: #a19191;
     z-index: 2;
     text-shadow: 1px 1px 1px black;
     letter-spacing: 1px;
@@ -53,13 +53,12 @@
 
 
 .circle {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
+    width: 300px;
+    height: 100em;
     position: absolute;
     top: -8em;
-    right: -10rem;
-    background-color: rgb(245, 172, 36);
+    left: -10rem;
+    background-color: #91a191;
     z-index: 1;
 }
 

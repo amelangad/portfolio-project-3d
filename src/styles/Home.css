@@ -1,9 +1,21 @@
 .home {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
-
 
 .canvas__home {
     background-color: black;
+    height: 100%;
 }
+
+
+.canvas__diamond {
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 100vw;
+  
+}
+
+

@@ -1,20 +1,29 @@
 import React from 'react'
 import Overlay from '../components/Overlay'
-import { Canvas} from "@react-three/fiber";
-import Sphere from '../components/Sphere';
-import {OrbitControls} from '@react-three/drei'
+import { Canvas } from "@react-three/fiber";
+import Stars from '../components/Stars';
+import { OrbitControls, ScrollControls } from '@react-three/drei'
 import '../styles/Home.css'
+import Diamond from '../components/Diamond'
+import Desc from '../components/Desc'
 
 export default function Home() {
+
+
   return (
-    <section className ="home">
-<Canvas className ="canvas__home" camera={{ position: [0, 0, 1] }}
-        resized= { false}>
-         <OrbitControls
-         enableZoom = {false}/>
-         <Sphere/>
+<section className="home">
+        <Canvas className ="canvas__diamond" shadows camera={{ position: [0, 1.5, 8], fov: 30 }}
+        resize= {{ scroll: false}}>
+        <pointLight position={[10, 25, 0]} />
+         <ambientLight intensity={.1}/>
+         <ScrollControls pages ={3} damping ={0.25}>
+         <Stars />
+          <Diamond/>
+          <Desc/>
+        </ScrollControls>
         </Canvas>
-    <Overlay/>
+   <Overlay />
    </section>
+
   )
 }

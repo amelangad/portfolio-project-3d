@@ -10,7 +10,7 @@
     justify-content: center;
     flex-direction: row;
     transition: width .5s ease-in;
-    overflow:hidden;
+    overflow-x:hidden;
     z-index:50;
 }
 
@@ -60,6 +60,7 @@
 }
 
 .link__icon {
+  padding-left:1rem;
     font-size: 2rem;
     color: black;
    

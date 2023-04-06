@@ -15,23 +15,17 @@ export default function Nav() {
     },
     {
       id: 2,
-      title: "About me",
-      icon: <HiUser />,
-      link: 'about',
-    },
-    {
-      id: 3,
       title: "Projects",
       icon: <HiPencil />,
       link: 'projects',
     },
     {
-      id: 4,
+      id: 3,
       title: "Contact me",
       icon: <HiMail />,
       link: 'contact',
     },
-    
+
   ];
 
   return (
@@ -41,9 +35,9 @@ export default function Nav() {
       onLoad={() => setShow(true)}>
       <ul className="nav__menu">
         {menuItems.map(item => <li className="nav__menu--link" key={item.id}>
-              <i className="link__icon">{item.icon}</i>
-              <Link to={item.link} className ="link__wrapper">
-              <h1 className={`link__text ${open ? 'open' : 'close'}`}>{item.title}</h1></Link>
+          <i className="link__icon">{item.icon}</i>
+          <Link to={item.link} className="link__wrapper">
+            <h1 className={`link__text ${open ? 'open' : 'close'}`}>{item.title}</h1></Link>
         </li>
         )}
       </ul>
