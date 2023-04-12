@@ -102,6 +102,7 @@
 
   @media (max-width: 300px){
     .nav__menu{
+      width: 6vw;
       gap:.5rem;
     }
 
