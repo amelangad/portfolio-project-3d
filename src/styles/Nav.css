@@ -110,6 +110,13 @@
       font-size: 1rem;
   
     }
+    .open {
+      height: 20vh;
+  }
+  
+  .close {
+     height: 10vh;
+  }
   }
 
 @media (min-width: 750px) {
