@@ -103,7 +103,7 @@
   @media (max-width: 300px){
     .nav__menu{
       gap:.5rem;
-      height: auto;
+      height: 10vh;
     }
 
     .link__text {
