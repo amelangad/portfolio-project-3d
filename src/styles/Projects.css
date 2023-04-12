@@ -150,11 +150,18 @@
     display: flex;
     justify-content: center;
     margin: 2rem;
+    border-radius: 20px;
 }
 
+.project__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .project__img {
     object-fit: contain;
     width: 80%;
+    border-radius:20px;
 }
 
 
@@ -190,6 +197,6 @@
     }
 
     .project {
-        width: 30%;
+        width: 50%;
     }
 }
