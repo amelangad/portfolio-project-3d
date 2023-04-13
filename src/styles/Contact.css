@@ -1,0 +1,103 @@
+.contact__background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/galaxy.jpg');
+    background-position: contain;
+
+}
+.contact__wrapper {
+    background-color: rgba(0, 0, 0, 0.575);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+
+.contact__title {
+    font-size: 3em;
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 1px 1px 1px white;
+    animation: 20s rotate infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg)}
+    25% { transform: rotate(5deg)}
+    50% { transform: rotate(-5deg)}
+    100% { transform: rotate(0deg)}
+}
+
+
+.contact__links {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 100%;
+position: absolute;
+bottom:0;
+left: 50%;
+transform: translate(-50%, 50%);
+
+}
+
+.contact__email, .contact__phone {
+    font-size: 3rem;
+    color: white;
+    padding:2rem;
+    margin:2rem;
+}
+
+.contact__email{
+    background-color: rgba(124, 124, 212, 0.678);
+    transition: .3s ease-in-out;
+}
+
+.contact__email:hover {
+    background-color: rgb(124, 124, 212);
+    transform: translateY(2px);
+}
+
+.contact__phone{
+    background-color: rgba(120, 235, 164, 0.527);
+    transition: .3s ease-in-out;
+    
+}
+
+.contact__phone:hover{
+    background-color: rgb(120, 235, 164);
+    transform: translateY(2px);
+}
+
+@media (max-width: 300px){
+    .contact__title {
+        font-size: 2.5em;
+    }
+
+    .contact__links {
+        justify-content: center;
+    }
+    .contact__email, .contact__phone {
+        padding:1rem;
+        margin: 0.5rem
+    }
+}
+
+@media (min-width: 768px){
+    .contact__title {
+        font-size: 5em;
+    }
+    .contact__link{
+        width: 50%;
+    }
+}
