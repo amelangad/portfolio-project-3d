@@ -15,9 +15,9 @@ export default function Desc() {
       <Section>
         <h1 className="desc__title">Technical skills</h1>
         <p className="desc__text">
-          I know Vanills JS and React (16+, with Hooks), prefer working with Tailwind but can use CSS, SCSS and BEM Concept.
+          I know Vanills JS and React, prefer working with SCSS, but can use CSS, Tailwind and know BEM Concept.
         <br></br> I know base of Three.js (with JS and with Fiber and Drei with React) and a little of Node.js (and Express).<br></br>
-        I using Visual Studio Code, npm and know git command. My English is B2 level and I work on it, but I understand most of the documentation and all of videos.
+        I using Visual Studio Code, npm and know git command. My English is B2 level and I work on it, but I understand most of the documentation.
         </p>
         <div className="circle"></div>
       </Section>
