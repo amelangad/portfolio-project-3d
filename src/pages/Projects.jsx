@@ -29,7 +29,7 @@ export default function Projects() {
       title: 'Movies App',
       img: movies,
       desc: "React + Node.js form",
-      href: "hhttps://search-for-moviesss.netlify.app/",
+      href: "https://search-for-moviesss.netlify.app/",
     },
     {
       id: 4,
