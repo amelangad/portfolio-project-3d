@@ -2,7 +2,7 @@ import React from 'react'
 import Overlay from '../components/Overlay'
 import { Canvas } from "@react-three/fiber";
 import Stars from '../components/Stars';
-import { OrbitControls, ScrollControls } from '@react-three/drei'
+import { ScrollControls } from '@react-three/drei'
 import '../styles/Home.css'
 import Sphere from '../components/Sphere'
 import Desc from '../components/Desc'
