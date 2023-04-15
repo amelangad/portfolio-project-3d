@@ -95,29 +95,6 @@
   }
 
 
-@media (max-width: 350px){
-  .nav{
-    margin: 0;
-    width: 100%;
-
-    transition: .3s ease-in;
-  }
-  .nav__menu {
-    gap:.5rem;
-  }
-
-  .link__text {
-    font-size: 1rem;
-    padding:0;
-  }
-
-  .close {
-    height: 100px;
-  }
-  .open {
-    height: 140px;
-  }
-}
 
 @media (min-width: 750px) {
   .nav {
