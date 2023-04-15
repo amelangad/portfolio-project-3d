@@ -7,7 +7,7 @@ import { MeshPhongMaterial } from "three";
 export const FLOOR_HEIGHT = 1;
 export const NB_FLOORS = 3;
 
-function Diamond(props) {
+function Sphere(props) {
   const ref = useRef();
   const tl = useRef();
   const scroll = useScroll()
@@ -38,4 +38,4 @@ function Diamond(props) {
   );
 }
 
-export default Diamond;
+export default Sphere;
