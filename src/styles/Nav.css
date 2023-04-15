@@ -100,7 +100,7 @@
      height: 8vh;
   }
 
-@media (max-width: 350px){
+@media (min-width: 250px){
   .nav{
     background-color: green;
     margin: 0;
