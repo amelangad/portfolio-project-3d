@@ -99,7 +99,7 @@
   .nav{
     margin: 0;
     width: 100%;
-    height: 8vh;
+
     transition: .3s ease-in;
   }
   .nav__menu {
@@ -112,7 +112,7 @@
   }
 
   .close {
-    height: 70px;
+    height: 80px;
   }
   .open {
     height: 130px;
